@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -O2
+TARGET = crypto_project
+
+all: $(TARGET)
+
+$(TARGET): crypto_project.c
+	$(CC) $(CFLAGS) -o $(TARGET) crypto_project.c
+
+clean:
+	rm -f $(TARGET)
